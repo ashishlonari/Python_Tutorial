@@ -8,3 +8,12 @@ Dictionary : set of key value pair of item items in the dictionary are separated
 
 Set : Set has unique elements and cant be repeated.It is modifiable and  represented inside {}  set1 ={1,1,5,6,"Ashish",};  Output :{1, 'Ashish', 5, 6} .
 
+def function -: this is a function which could be called later and thus we could be called with parameters    
+        Ex: def my_func(a,b):  
+              c = a+b  
+              print(c)  
+            my_func(10,20)
+
+
+class class_name :-  It is used to represents the class in Python. It is the collection of the variable and methods.
+  
