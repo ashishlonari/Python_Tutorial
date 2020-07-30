@@ -13,6 +13,9 @@ print(list1[3:6]);
 print(list1 + list1);
 print(len(list1));
 print(list1 * 3);
+list1.append("Swarrop");
+print(list1);
+print(list1.pop());
 
 
 # Output
@@ -26,3 +29,5 @@ print(list1 * 3);
 # [1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog', 1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog']
 # 7
 # [1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog', 1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog', 1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog']
+# [1, 'Ashish', 'Vaibhav', 'Saurav', 'Gaurav', 'Gnaesh', 'Suyog', 'Swarrop']
+# Swarrop
