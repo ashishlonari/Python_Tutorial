@@ -15,5 +15,7 @@ def function -: this is a function which could be called later and thus we could
             my_func(10,20)
 
 
-class class_name :-  It is used to represents the class in Python. It is the collection of the variable and methods.
-  
+split keyword in single line
+x,y,z =input("Enter three values").split();
+Output :  Enter three values5 65 4
+
