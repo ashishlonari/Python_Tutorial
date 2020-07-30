@@ -1,0 +1,10 @@
+type(a) : We can get a type of a variable by sinply using type keyword
+
+List : List is like array and represented in [] Ex: list1 = [1, "hi", "Python", 2]
+
+Tuple : Tuple is like a list but it is not modifiable and represented in ()  Ex: tup  = ("hi", "Python", 2)
+
+Dictionary : set of key value pair of item items in the dictionary are separated with the comma and represented inside {}  and key:value Ex: dict = {1:"Ashish",2:"Suyog",3:"Ramdas"};
+
+Set : Set has unique elements and cant be repeated.It is modifiable and  represented inside {}  set1 ={1,1,5,6,"Ashish",};  Output :{1, 'Ashish', 5, 6} .
+
