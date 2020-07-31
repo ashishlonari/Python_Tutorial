@@ -1,4 +1,4 @@
-type(a) : We can get a type of a variable by sinply using type keyword
+type(a) : We can get a type of a variable by simply using type keyword
 
 List : List is like array and represented in [] Ex: list1 = [1, "hi", "Python", 2]
 
