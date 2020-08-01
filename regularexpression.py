@@ -34,3 +34,60 @@ j=s.findall(str2);
 print(j);
 
 print("======================")
+
+# By doing this we get if number of i s are greater or equal to 2 it will print it.
+str3="aiaaiii i am a good aiaiall is well ai";
+airep = re.compile('ai{2}');
+repeat=airep.finditer(str3);
+for lu in repeat:
+    print(lu);
+
+print("======================")
+
+# Now if we want ai in group and ai repeates twice or more we use round brackets.
+str4="aiaaiii i am a good aiaiall is well ai";
+airep = re.compile('(ai){2}');
+repeat=airep.finditer(str3);
+for lu in repeat:
+    print(lu);
+print("======================")
+
+# now if we want an or thai is for ex: 'll' or 'ai' then we use '|'
+# Or function in regular expression
+
+str5="aiaaiii i am a good aiaiall is well ai";
+rc=re.compile('ai|ll');
+a=rc.findall(str5);
+print(a);
+print("==============================")
+
+# \A returns a match if the specified character are at the beginning of the string.
+
+str5="aiaaiii i am a good aiaiallaia is well aiaia";
+rc=re.compile('\Aaia');
+a=rc.finditer(str5);
+for i in a:
+    print(i);
+print("==============================")
+
+# \b returns a match if the specified character are at the beginning of the string or at the end of the string.
+
+str6="aiaaiii i am a good aiaiallaia is well laia";
+rc1=re.compile('\baia');
+a2=rc1.finditer(str6);
+for i in a2:
+    print(i);
+print("==============================")
+
+# \d Now idf therae are lots of number which have 5 digits at start then - and 5 digits at the end so we can get the match by using '\d'
+
+# {} curly braces are used to specify exactly the number of occurunces
+
+str7="aiaaiiimob no . : 98230-19305  97652-59595 a good aiaiallaia is well aiaia";
+rc=re.compile('\d{5}-\d{5}');
+a=rc.finditer(str7);
+for i in a:
+    print(i);
+print("==============================")
+
+
