@@ -79,7 +79,7 @@ for i in a2:
     print(i);
 print("==============================")
 
-# \d Now idf therae are lots of number which have 5 digits at start then - and 5 digits at the end so we can get the match by using '\d'
+# \d Now if there are lots of number which have 5 digits at start then - and 5 digits at the end so we can get the match by using '\d'
 
 # {} curly braces are used to specify exactly the number of occurunces
 
@@ -91,3 +91,26 @@ for i in a:
 print("==============================")
 
 
+# re.search()
+
+# search in regular expression iis used for searching a specific type of string now here we are checking the DOB so we will first check the month whether albhabets are preent ad immediate after alphabet are there digits.
+# So now in the below example we are declaring condition for regular expresssion i.e ([A-Za-z]+) (\d+) and \d is for digits so here require digit after the Word
+
+str7="My DOB is December 7";
+reg = r"([A-Za-z]+) (\d+)"
+m = re.search(reg,str7);
+if m != None:
+    print("Index is :",(m.start(),m.end()));
+    print("Month is",m.group(1));
+    print("Day is ",m.group(2));
+else:
+    print("No Day or date present");
+
+
+# Findall 
+# This is used to find the specific typees in the String .
+
+str8 = "8e8aeeaca6ba9052243b9bef102e0a298fea1d121baaee88b528ea4e37c3885a";
+rex = '\d+'
+m=re.findall(rex,str8);
+print(m);
